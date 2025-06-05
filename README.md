@@ -45,7 +45,7 @@ answer_03 = None
 Reference: <https://docs.python.org/3/library/functions.html>
 
 ```python
-def answer_04(x: int) -> float:
+def answer_04(x: int) -> int:
     """
     >>> answer_04(-3)
     3
