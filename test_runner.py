@@ -1,7 +1,7 @@
 import unittest
 import importlib
 
-class TestAssignmentOne(unittest.TestCase):
+class TestAssignmentTwo(unittest.TestCase):
     def test_01(self):
         self.assertFalse(answers.answer_01)
     def test_02(self):
@@ -23,7 +23,7 @@ class TestAssignmentOne(unittest.TestCase):
 
 chapter_name = "快速開始"
 answers = importlib.import_module("answers")
-suite = unittest.TestLoader().loadTestsFromTestCase(TestAssignmentOne)
+suite = unittest.TestLoader().loadTestsFromTestCase(TestAssignmentTwo)
 runner = unittest.TextTestRunner(verbosity=2)
 test_results = runner.run(suite)
 number_of_failures = len(test_results.failures)
